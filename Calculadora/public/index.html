@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <input type="text" name="tela" id="display-da-tela">
+            <div class="buttons-container">
+
+                <button class="button" onclick="adicionar_parametro('(')">(</button>
+                <button class="button" onclick="adicionar_parametro(')')">)</button>
+
+                <button class="button" id="ac" onclick="apagar()">AC</button>
+
+                <button class="button" onclick="adicionar_parametro(7)">7</button>
+                <button class="button" onclick="adicionar_parametro(8)">8</button>
+                <button class="button" onclick="adicionar_parametro(9)">9</button>
+                <button class="button" onclick="adicionar_parametro('/')">/</button>
+
+                <button class="button" onclick="adicionar_parametro(4)">4</button>
+                <button class="button" onclick="adicionar_parametro(5)">5</button>
+                <button class="button" onclick="adicionar_parametro(6)">6</button>
+                <button class="button" onclick="adicionar_parametro('*')">*</button>
+
+                <button class="button" onclick="adicionar_parametro(1)">1</button>
+                <button class="button" onclick="adicionar_parametro(2)">2</button>
+                <button class="button" onclick="adicionar_parametro(3)">3</button>
+                <button class="button" onclick="adicionar_parametro('-')">-</button>
+
+                <button class="button" onclick="adicionar_parametro(0)">0</button>
+                <button class="button" onclick="adicionar_ponto()">.</button>
+
+                <button class="button" id="cal">=</button>
+
+                <button class="button" onclick="adicionar_parametro('+')">+</button>
+
+            </div>
+            <div>
+                <form id="expressao-resul">
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
